@@ -1,0 +1,14 @@
+@media(max-width:992px){
+    .section__nav--big{
+        display:none;
+    }
+    main{
+        height: 100vh;
+        margin: auto;
+        
+    }
+    .navbar{
+        position: fixed !important;
+        width:100vw;
+    }
+}

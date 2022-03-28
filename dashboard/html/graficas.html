@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   
+<script src="../../dependencias/canvasJs/canvasjs.min.js"></script>
+<script type="text/javascript">
+window.onload = function () {
+var chart = new CanvasJS.Chart("chartContainer",{
+	title: {
+		text: "popularidad"
+	},
+	data: [
+        {
+            type: "pyramid",
+            dataPoints: [
+            { y: 30000, label: "Hamburguesa" },
+            { y: 22000, label: "Perro " },
+            { y: 20000, label: "salchipapa" },
+            { y: 15000, label: "hamburguesa " },
+            { y: 8000, label: "perro caliente " },
+            { y: 10000, label: "empanadas" }
+            ]
+        }
+	]
+});
+chart.render();
+
+var chart2 = new CanvasJS.Chart("chartContainer2", {
+		title:{
+			text: "Productos mas vendidos"              
+		},
+		data: [              
+		{
+			// Change type to "doughnut", "line", "splineArea", etc.
+			type: "column",
+			dataPoints: [
+				{ label: "perro",  y: 10  },
+				{ label: "Hamburguesa ", y: 15  },
+				{ label: "perro ", y: 25  },
+				{ label: "Hamburguesa ",  y: 30  },
+				{ label: "salchipapa",  y: 28  }
+			]
+		}
+		]
+	});
+chart2.render();
+}
+</script>
+</head>
+<style>
+    .chart{
+        width:300px;
+        height: 270px;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+       /*  padding: 30px;
+        border-radius: 10px;
+        border: 3px solid #f8d228;
+        width: 50%; */
+    }
+    .cont{
+        padding:30px;
+        border: 3px solid #f8d228;
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #a5a5a5;
+    }
+    .cont:hover{
+        box-shadow: 0px 0px 13px #8d8d8d;
+
+    }
+    @media(max-width:400px){
+        .cont{
+            padding:10px;
+
+        }
+        .chart{
+        width:280px;
+        height: 250px;
+    }
+    }
+    
+   
+</style>
+<body>
+    <section>
+
+       <div class="cont"> <div id="chartContainer" class="chart"></div></div>
+       <div class="cont"> <div id="chartContainer2" class="chart"></div></div>
+
+    </section>
+</body>
+</html>

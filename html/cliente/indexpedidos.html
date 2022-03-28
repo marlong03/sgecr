@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Destino del pedido</title>
+	<link rel="stylesheet" href="../../dependencias/swiftalert2/sweetalert2.min.css">
+	<link rel="shortcut icon"  href="../../img/logosistemainfo.png">
+	<link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/stylespedidos.css">
+</head>
+<style>
+	form div{
+		background-color: #d3ae08;
+		padding:5px 10px;
+		border-radius: 10px;
+	}
+</style>
+<body >
+	<section class="form-login">
+		<h3>Seleccine metodo de envio:</h3>
+		<small>(Escoja Uno)</small>
+		<form action="" class="form__pedido">
+			<div >
+				<label for="">Pedido en tienda</label><br><br>
+				<input type="number" placeholder="Numero de mesa"> ó
+				<input type="button" value="Recoger en tienda"><br>
+			</div>
+
+			<hr>
+
+			<div>
+				<label for="">Pedido a domicilio</label><br><br>
+				<input type="text" placeholder="calle 14 #32 34"> ó <input type="button" value="Direccion registrada">
+			</div>
+
+			
+
+		</form>
+		<div class="container__btns">
+
+			<input class="btn" type="button" id="btnRealizarPedido" value="Realizar Pedido">
+			<a href="./cliente.html"><input class="btn" type="button" value="Cerrar Sesion"></a>
+		</div>
+        
+		
+	</section>
+	<script src="../../dependencias/swiftalert2/sweetalert2.all.min.js"></script>
+    <script>
+         const btnRealizarPedido = document.getElementById("btnRealizarPedido")
+         btnRealizarPedido.addEventListener("click",function(){
+            Swal.fire(
+            '¡Pedido realizado!',
+            'Presiona el boton para regresar',
+            'success',
+            )
+        })
+    </script>
+</body>
+</html>

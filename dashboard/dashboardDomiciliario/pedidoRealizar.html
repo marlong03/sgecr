@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .columna {
+        width:90%;
+        max-width: 400px;
+        border:3px solid black;
+        border-radius: 10px;
+        margin:10px;
+        background-color: #fff;
+    }
+   
+    .columna p{
+        padding:10px 15px;
+    }
+    
+    .columna .fila2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fila{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width:100%;
+    }
+    .fila1{
+        text-align: center;
+        padding:12px;
+    }
+    .fila div{
+        padding:10px 0;
+        display: flex;
+        justify-content: center;
+
+    }
+    .fila div:first-child{
+        background-color: #d6d6d6;
+    }
+    .container__map{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    iframe{
+        width:90%;
+        height: 350px;
+        border:2px solid black;
+        border-radius: 10px;
+        margin-bottom:20px;
+    }
+    textarea{
+        width:250px;
+        height: 100px;
+        border-radius: 10px;
+        border:2px solid #000000;
+        padding:10px;
+    }
+    .container__btns{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container__btns input{
+        padding: 10px;
+        border-radius: 5px;
+        background-color: green;
+        color:white;
+        border:none;
+        margin:10px 10px;
+        cursor: pointer;
+
+
+    }
+    center div{
+        border:2px solid #000000;
+        padding:15px 10px;
+        border-radius: 10px;
+        display: flex;
+    }
+    center div input{
+        color:white;
+        padding:15px 5px;
+        border-radius: 5px;
+        border:none;
+        background-color: green;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    
+</style>
+<body>
+    
+    <div class="columna">
+        <div class="fila1"><p>pedido 1</p></div>
+        <div class="fila2">
+            <div class="fila">
+                <div>estado</div>
+                <div style="background-color: orange;color:white;">En proceso</div>
+            </div>
+            <div class="fila">
+                <div>nombre</div>
+                <div>thomas</div>
+            </div>
+            <div class="fila">
+                <div>numero cliente</div>
+                <div>30032342343</div>
+            </div>
+            <div class="fila">
+                <div>direccion</div>
+                <div>calle 12 34 34</div>
+            </div>
+            <div class="fila">
+                <div>descripcion</div>
+                <div><ul> 
+                    <li>asdsadsad</li>
+                    <li>sadsadsa</li>
+                    <li>dsadd</li>
+
+                </ul></div>
+            </div>
+            <div class="fila">
+                <div>total a cobrar</div>
+                <div>$10.000</div>
+            </div>
+            
+        </div>
+    </div><br>
+    
+    <div class="container__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.309267759193!2d-74.22891828659765!3d4.716242542839147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f780464a569c1%3A0xa0e373c758a8cf4c!2sCl.%2012%2C%20Mosquera%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1639020854441!5m2!1ses!2sco" loading="lazy"></iframe>
+    </div>
+    <center><div><textarea name="" id=""  placeholder="Escribe un comentario para la empresa(opcional)"></textarea>
+        <input type="button" value="enviar">
+    </div></center>
+        <div class="container__btns">
+    
+            <input type="button" value="Pedido entregado">
+            <input type="button" style="background-color: orange;"value="Pedido en proceso">
+            <input type="button" style="background-color: red;"value="Pedido no entregado">
+    
+        </div>
+</body>
+</html>

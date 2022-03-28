@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Domiciliario</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header input{
+        padding:12px 10px;
+        background-color: #ffffff;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:35px;
+        background-color: #ffcb3b;
+    }
+    header img{
+        width:200px;
+        
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        padding:10px;
+        background-color: #555555;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav li{
+        list-style: none;
+        margin:0 10px;
+        color:white;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+    }
+    nav li:hover{
+        border-bottom: 2px solid #ffcb3b;
+    }
+    li a{
+        text-decoration: none;
+        color:white;
+    }
+    .section__iframe{
+        height:100vh;
+    }
+    iframe{
+        width:99.5%;
+        border:none;
+        background-color: #f0f0f0;
+        height:100%;
+
+    }
+</style>
+<body>
+    <header>
+        <img src="../../img/logo2.png" alt="">
+        <a href="../../html/cliente/cliente.html"><input type="button" value="Cerrar sesion"></a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./pedidosPorReailizar.html" target="iframes">Pedidos por realizar</a></li>
+            <li><a href="./misPedidos.html" target="iframes">Mis pedidos</a></li>
+
+        </ul>
+    </nav>
+    <section class="section__iframe">
+
+        <iframe src="./pedidosPorReailizar.html" name="iframes"></iframe>
+    </section>
+
+    
+</body>
+</html>

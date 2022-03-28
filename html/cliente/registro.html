@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Registrate aqui!</title>
+    <link rel="stylesheet" href="../../dependencias/swiftalert2/sweetalert2.min.css">
+    <link rel="stylesheet" href="../../css/inventario.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <section class="inicioSesion__container">
+        <div class="divisionLogo">
+            <img src="../../img/logo.png" alt="">
+        </div>
+        <center>
+
+            <div class="container__inicioSesion">
+                <h2>Registrate</h2>
+                <form class="form__logup">
+                    <input type="text" placeholder="Nombre completo*" id="nombreCompleto">
+                    <input type="tel" placeholder="Telefono*" id="telefono">
+                    <input type="email" placeholder="Email*" id="email">
+                    <input type="password" placeholder="Contraseña*"name="password" id="password">
+                    <input type="password" placeholder="Confirma Contraseña*"name="password" id="passwordConfirm">
+                    
+                    <input type="text" placeholder="Codigo Empresarial*" id="codigoEmpresarial">
+                </form>
+                <button class="btn" id="btnRegistro">Enviar</button>
+                <p>¿Ya tienes una cuenta?<a href="./inicioSesionInventario.html">Inicia sesion aquí</a></p>
+                
+            </div>
+        </center>
+    </section> 
+    <script src="../../dependencias/swiftalert2/sweetalert2.all.min.js"></script>
+    <script src="../../js/registroUser.js"></script>
+    
+    <!-- <script>
+         const btnRegistro = document.getElementById("btnRegistro")
+         btnRegistro.addEventListener("click",function(){
+            Swal.fire(
+            '¡Registro exitoso!',
+            'Presiona el boton para regresar',
+            'success',
+			
+            )
+        })
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,127 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+body{
+    margin-top: 20px;
+}
+tr:first-child{
+    background-color: #bbbbbb;
+    text-align: center;
+}
+td{
+    padding: 2px 7px;
+    border:2px solid #000000;
+}
+.container__acciones{
+    display: flex;
+}
+center h2{
+    margin-top: 20px;
+}
+table{
+    margin:0px 0;
+    max-width: 90%;
+}
+.table-responsive{
+    margin-bottom: 30px;
+}
+.container__table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin:auto;
+
+    /* width:100vw; */
+    
+}
+table{
+    margin:auto;
+    margin-bottom: 20px;
+}
+.container__table h1{
+    font-size: 35px;
+    margin-top: 35px;
+}
+.table__productos{
+    margin:auto;
+}
+.table__productos input{
+    padding:7px 0;
+    border-radius: 7px;
+    border:1px solid gray;
+    width:80px;
+}
+.container__btns{
+    width:70%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.container__btns input{
+    padding:15px 40px;
+    margin-left:20px;
+    border-radius: 5px;
+    color:white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: 3px solid #ffffff;
+    background-color: #c93e07;
+}
+.container__btns input:hover{
+    border: 3px solid #000000;
+    cursor: pointer;
+}
+.container__btns input:first-child{
+    background-color: #07b307;
+}
+.btn--borrar{
+    padding:3px 5px;
+    border-radius: 5px;
+    border:none;
+    background-color: #c03e0a;
+    color:white;
+    letter-spacing: 2px;
+}
+.btn--borrar:hover{
+    background-color: #f82525;
+    cursor: pointer;
+}
+.table__pedido--enviar td input{
+    width:100%;
+    padding:7px 0;
+    border-radius: 7px;
+    border:1px solid gray;
+}
+ td ul{
+    margin-left: 10px;
+}
+ select{
+    padding:7px 2px;
+    border-radius: 7px;
+}
+.status{
+    text-align: center;
+    padding:5px 5px;
+    border-radius: 5px;
+    border:none;
+    color:white;
+    cursor: pointer;
+}
+td a input{
+    padding:12px 10px;
+    border-radius: 5px;
+    background-color: #07b307;
+    border:none;
+    color:white;
+    cursor: pointer;
+}
+main{
+    display: flex;
+   
+}
+

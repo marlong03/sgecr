@@ -1,0 +1,108 @@
+*{
+		margin:0;
+		padding:0;
+		box-sizing: border-box;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+	}
+	html{
+		background: url(../img/314.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+    input{
+        width: 150px;
+		padding:10px;
+		border-radius: 5px;
+		outline: none;
+		border: none;
+    }
+	hr{
+		margin:10px auto;
+		border:2px solid #dfdfdf;
+		width:300px;
+	}
+	.form-login{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		max-width:500px;
+		background-color: #e6c019;
+
+		margin : auto ;
+		/* margin-top: 70px; */
+		box-shadow: 0px 0px 10px #272727;
+		padding: 20px 30px;
+		text-align: center;
+		color: rgb(0, 0, 0);
+		/* border-radius: 15px; */
+	}
+	form input[type="button"]{
+		cursor: pointer;
+		border: 2px solid #c5a410;
+	}
+	.controls{
+	width:100%;
+	border:1px solid #0496ff;
+	padding:11px 10px;
+	background: #CAF0F8;
+	font-size: 14px;
+	font-weight: bold;
+
+	}
+	.buttons{
+		height:35px;
+		background:#d6460d;
+		border:none;
+		color:white;
+		margin:5px 10px;
+		
+	}
+
+	.form-login p{
+		height:40px;
+		text-align : center;
+		
+
+	}
+	.form-login a{
+		color: white;
+		text-decoration : none ;
+		font-size: 14px;
+
+	}
+
+	.form-login a:hover {
+		text-decoration: underline;
+
+	}
+	.container__btns{
+		display: flex;
+		margin-top: 20px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	small{
+		margin-bottom: 30px;
+	}
+	.form__pedido input{
+
+		width:180px;
+	}
+	.form__pedido input[type=button]{
+		border:2px solid transparent ;
+		
+	}
+	.form__pedido input[type=button]:focus{
+		background-color: #d62b0d;
+		border: 2px solid white;
+		color:white;
+
+	}
