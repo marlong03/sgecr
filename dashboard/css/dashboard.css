@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
-    
+    text-transform: capitalize;
 }
 
 header{
@@ -28,7 +28,7 @@ header img{
     width:200px;
     
 }
-.section__nav--big{}
+
 /* ::-webkit-scrollbar {
     display: none;
     } */
@@ -96,11 +96,6 @@ nav{
     background-color: #ffcb3b;
     border: 3px solid white;
 }
-
-
-
-
-
 .container__modulos{
     background-color: #dfdfdf;
     padding: 10px 0;
@@ -114,7 +109,8 @@ nav{
     padding:10px;
     background-color:#e9e9e9;
     border-radius: 5px;
-    margin:4px 0;    
+    margin:4px 0;   
+    text-transform: capitalize; 
 
 }
 .container__modulos li:hover{
@@ -125,6 +121,8 @@ nav{
 .container__modulos ul{
  margin:10px;
  padding:0;
+ text-transform: capitalize; 
+
 }
 main{
     display: flex;
@@ -153,6 +151,9 @@ footer{
     color:black; 
    
    
+}
+td{
+    text-transform: capitalize; 
 }
 footer a{
     text-decoration: none;

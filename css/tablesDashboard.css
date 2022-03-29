@@ -3,6 +3,9 @@
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    text-transform: capitalize ;
+
+
 }
 body{
     margin-top: 20px;
@@ -10,10 +13,13 @@ body{
 tr:first-child{
     background-color: #bbbbbb;
     text-align: center;
+    text-transform: capitalize;
+
 }
 td{
     padding: 2px 7px;
     border:2px solid #000000;
+    text-transform: capitalize ;
 }
 .container__acciones{
     display: flex;
@@ -42,6 +48,8 @@ table{
 table{
     margin:auto;
     margin-bottom: 20px;
+    text-transform: capitalize;
+
 }
 .container__table h1{
     font-size: 35px;
@@ -99,6 +107,8 @@ table{
 }
  td ul{
     margin-left: 10px;
+    text-transform: capitalize;
+
 }
  select{
     padding:7px 2px;
@@ -123,5 +133,8 @@ td a input{
 main{
     display: flex;
    
+}
+tr{
+    text-transform: capitalize ;
 }
 
